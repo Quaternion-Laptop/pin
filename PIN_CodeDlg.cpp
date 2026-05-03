@@ -231,6 +231,8 @@ void CPINCodeDlg::OnBnClickedButtonMail()
 void CPINCodeDlg::OnBnClickedButtonFood()
 {
 	CFoodDialog dlgFood;
+	dlgFood.m_progress_bar_food = &m_ProgressBarFood;
+	
 	dlgFood.DoModal();
 	/*DialogBoxThis<CPINCodeDlg, &CPINCodeDlg::MyDlgProc>(this, GetModuleHandle(NULL),
 		MAKEINTRESOURCE(IDD_DIALOG_FOOD), this->m_hWnd); */

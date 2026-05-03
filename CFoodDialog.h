@@ -12,7 +12,7 @@ public:
 	CFoodDialog();   // стандартный конструктор
 	//virtual ~CFoodDialog();
 	afx_msg void OnBnClickedButtonCancel();
-// Данные диалогового окна
+	CProgressCtrl* m_progress_bar_food;
 #ifdef AFX_DESIGN_TIME
 	enum { IDD = IDD_DIALOG_FOOD };
 #endif
