@@ -33,4 +33,6 @@ void CFoodDialog::OnBnClickedButtonCancel()
 void CFoodDialog::OnBnClickedButtonNut()
 {
 	PlaySound(TEXT("C:\\Users\\Жижабюте\\Documents\\Visual Studio 2022\\Projects\\PIN_Code\\sounds\\hrust.wav"), NULL, SND_FILENAME);
+	int curr_pos = m_progress_bar_food->GetPos();
+	m_progress_bar_food->SetPos(curr_pos + 10);
 }
